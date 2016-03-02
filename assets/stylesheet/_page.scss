@@ -1,0 +1,23 @@
+.page-list {
+  $size: 36px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  > li {
+    width: $size;
+    height: $size;
+    line-height: $size;
+    float: left;
+    text-align: center;
+    margin-left: -1px;
+    color: #428bca;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+
+    &.active {
+      background-color: #eee;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+/node_modules
+/build
+/assets/lib
+/public/uploads
+
+*.swp
+*.swo
+*.log
+.project
+.idea
+.tmp
+/temp
+.sass-cache
+
+# Linux.gitignore
+*~
+
+# OSX.gitignore
+# Thumbnails
+._*
+*.DS_Store

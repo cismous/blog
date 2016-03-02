@@ -1,0 +1,46 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+body {
+  font: 16px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333;
+  background-color: #fff
+}
+
+a {
+  color: #4078c0;
+  text-decoration: none
+}
+
+a:hover, a:active {
+  text-decoration: underline
+}
+
+hr,.rule {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd
+}
+
+hr:before,.rule:before {
+  display: table;
+  content: ""
+}
+
+hr:after,.rule:after {
+  display: table;
+  clear: both;
+  content: ""
+}

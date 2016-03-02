@@ -1,0 +1,9 @@
+{% for article in articles %}
+<li>
+  <a class="title" href="{{ article.slug}}">{{ article.title }}</a>
+
+  <div class="time-wrap">
+    <time datetime="{{ article.created }}">{{ article.created }}</time>
+  </div>
+</li>
+{% endfor %}

@@ -1,0 +1,3 @@
+{% for item in page %}
+<li data-page="{{item}}" class="{% if item == curPage %}active{% endif %}">{{item}}</li>
+{% endfor %}

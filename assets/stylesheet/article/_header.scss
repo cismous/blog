@@ -1,0 +1,23 @@
+body > .article {
+  > header {
+    margin: 0 0 1.75rem;
+    text-align: center;
+
+    > .title {
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    > .time-wrap {
+      margin-bottom: 1rem;
+
+      time {
+        color: #757575;
+        display: inline-block;
+        font-size: .75rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

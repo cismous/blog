@@ -1,0 +1,7 @@
+{
+  "name": "blog",
+  "private": "true",
+  "dependencies": {
+    "normalize-css": "normalize.css#^3.0.3"
+  }
+}

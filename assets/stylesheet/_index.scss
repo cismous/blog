@@ -1,0 +1,30 @@
+.index-page {
+  .article-list {
+    padding: 0;
+    list-style-type: none;
+
+    > li {
+      font-size: 1rem;
+      line-height: 1.2;
+      margin: 0 0 .75rem;
+      padding: .75rem 0 0;
+
+      a {
+        color: #333;
+      }
+
+      .time-wrap {
+        float: right;
+        margin: 0 0 0 ;
+
+        > time {
+          color: #757575;
+          display: inline-block;
+          font-size: .75em;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

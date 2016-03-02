@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>羽风</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width,minimum-scale=1.0" name=viewport>
+  <link href="{{ resource.style}}" rel="stylesheet"/>
+</head>
+
+<body class="index-page">
+<header class="header">
+  <div class="logo"><span class="img"></span></div>
+
+  <h1 class="title">人生路漫漫</h1>
+</header>
+
+<div class="container">
+  <ul class="article-list">
+    {% include "index/list.html" %}
+  </ul>
+
+  <ul class="page-list cf">
+    {% include "index/page.html" %}
+  </ul>
+</div>
+<script src={{ resource.script }}></script>
+</body>
+</html>
