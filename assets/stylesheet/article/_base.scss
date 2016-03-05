@@ -2,7 +2,7 @@
 
 body > .article {
   margin-top: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 2.5rem;
 
   &.markdown {
     .article-body {
@@ -73,6 +73,6 @@ body > .article {
 @media screen and (max-width: $mobileWith) {
   body > .article {
     margin-top: 1.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 }
