@@ -16,7 +16,7 @@ module.exports = (app, config) => {
   app.keys = [config.app.sessionSecret];
   app.use(convert(session({
     store: new MongoStore({
-      url: 'mongodb://localhost/' + config.app.database
+      url: config.app.database
     })
   })));
 
