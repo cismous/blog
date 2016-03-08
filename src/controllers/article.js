@@ -44,7 +44,7 @@ const articleController = async (ctx, next) => {
   resource.style = supportWebp ? WEBP_STYLE_URL_APP : STYLE_URL_APP;
   const slug = ctx.params.slug;
   let article;
-  await Articles.findOne({slug: slug}, (err, data) => {
+  await Articles.findOne({slug: slug}).exec((err, data) => {
     if (err)
       return console.log(err);
     if (data)
