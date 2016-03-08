@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
  * @api private
  */
 const connect = config => {
-  mongoose.connect('mongodb://localhost/' + config.app.database);
+  mongoose.connect(config.app.database);
 };
 
 export {connect}

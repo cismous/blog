@@ -21,7 +21,7 @@ const specific = {
     app: {
       port: 4000,
       name: "Website",
-      database: 'blog',
+      database: 'mongodb://blog:PODrWYUMOTokDcm2yoII@yufeg.com/blog',
       sessionSecret: 'test',
       keys: ["test"],
     }
@@ -38,7 +38,7 @@ const specific = {
       cdn: "https://o373t90m2.qnssl.com/",
       port: process.env.PORT || 4000,
       name: "yufeng-blog",
-      database: 'blog',
+      database: 'mongodb://blog:PODrWYUMOTokDcm2yoII@yufeg.com/blog',
       sessionSecret: 'test',
       keys: ["test"],
     }
