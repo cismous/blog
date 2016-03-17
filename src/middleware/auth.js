@@ -1,21 +1,24 @@
+/**
+ * Module dependencies.
+ */
+
 const passport = require('koa-passport');
 
-const user = {id: 1, username: 'test'};
+/**
+ * Mongodb collection.
+ */
+
+import Users from '../model/users';
 
 passport.serializeUser(function (user, done) {
-  done(null, user.id)
+  done(null, user._id)
 });
 
 passport.deserializeUser(function (id, done) {
-  done(null, user)
+  Users.findById(id, done);
 });
 
-var LocalStrategy = require('passport-local').Strategy;
+const LocalStrategy = require('passport-local').Strategy;
 passport.use(new LocalStrategy(function (username, password, done) {
-  // retrieve user ...
-  if (username === 'test' && password === 'test') {
-    done(null, user)
-  } else {
-    done(null, false)
-  }
+  Users.findOne({username: username, password: password}, done);
 }));

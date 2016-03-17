@@ -24,15 +24,18 @@ module.exports = (app, config) => {
   app.use(bodyParser());
 
   // authentication
-  require('./auth-prepare');
-  const passport = require('koa-passport');
+  require('../middleware/auth');
   app.use(passport.initialize());
   app.use(passport.session());
 
   const router = new Router();
   router.post('login', passport.authenticate('local', {
-    successRedirect: '/',
+    successRedirect: '/admin',
     failureRedirect: '/404'
   }));
+  router.get('/logout', ctx => {
+    ctx.logout();
+    ctx.redirect('/')
+  });
   app.use(router.routes());
 };

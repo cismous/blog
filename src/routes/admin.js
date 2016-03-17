@@ -8,10 +8,10 @@ module.exports = function (app, config) {
   });
   // Require authentication for now
   app.use((ctx, next) => {
-    if (ctx.isAuthenticated())
-      return next();
+    if (ctx.request.path.indexOf('/admin') !== -1 && !ctx.isAuthenticated())
+      ctx.redirect('/login');
     else
-      ctx.redirect('/login')
+      return next();
   });
   router
     .get('/', indexController);
